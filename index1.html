@@ -1,0 +1,129 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Login page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+       
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<body>
+  
+  <div id="particles-js"></div>
+<body class="login">
+	
+<div class="cont_login">
+  <div class="cont_info_log_sign_up">
+        <!--LOGIN BUTTON-->
+        <div class="col_md_login">
+        <div class="cont_ba_opcitiy">
+        
+            <h2>LOGIN</h2>  
+    
+            <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+        </div>
+        </div>
+        <!--SIGN UP BUUTON--><div class="col_md_sign_up">
+        <div class="cont_ba_opcitiy">
+            <h2>SIGN UP</h2>
+            <button  class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+        </div>
+        </div>
+
+  </div>
+
+    <!--SIGN UP BACKGROUND-->
+        <div class="cont_back_info">
+        <div class="cont_img_back_grey">
+     
+        </div>
+       
+        </div>
+    
+<div class="cont_forms" >
+        
+        <div class="cont_form_login">
+                    <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+                            <h2>LOGIN</h2>
+     <!--INPUT EMAIL AND PASSWORD BLOCKS-->
+                    <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="email" name="email" class="input email" autocomplete="off">
+					    <label>E-Mail Address</label>
+				    </div>
+                    <div class="input-group col-md-8 col-md-offset-2">
+							<input type="password" name="password" class="input password">
+							<label>Password</label>
+				    </div>
+                    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+        </div>
+  <!--SIGN UP BLOCK-->
+        <div class="cont_form_sign_up">
+                    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                          <form method="post" action="index1.php">
+                            <h2>SIGN UP</h2>
+                    <div class="input-group col-md-8 col-md-offset-2">
+							<input type="email" name="email" class="input email" autocomplete="off">
+							<label>E-Mail </label>
+
+                    </div>
+                    <div class="input-group col-md-8 col-md-offset-2">
+							<input type="email" name="username" class="input email" autocomplete="off">
+							<label>Username </label>
+
+                    </div>
+        
+
+                    <div class="input-group col-md-8 col-md-offset-2">
+							<input type="password" name="password_1" class="input password">
+							<label>Password</label>
+                    </div>
+    
+     
+
+                    <div class="input-group col-md-8 col-md-offset-2">
+							<input type="password" name="password_2" class="input password">
+							<label>Confirm Password</label>
+				    </div>
+            <button type ="submit" class="btn_sign_up" name="reg_user" onclick="cambiar_sign_up()">SIGN UP</button>
+        </div>
+        </div>
+
+
+                    <!-- 
+                        <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button> -->
+                        </form>
+
+        </div>
+
+</div>
+    
+</div>
+
+  
+    <script src="js/index.js"></script>
+
+</body>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+
+    <script  src="js/index.js"></script>
+    </body>
+</html>

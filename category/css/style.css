@@ -1,0 +1,523 @@
+a:hover {
+  text-decoration: underline;
+}
+/*.topbar {
+    padding-top: 0px;
+     height: 45px;
+    width: 100%;
+    background-color: black ;
+    opacity: 0.5;
+}*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+.topnav h1 {
+  margin: 0;
+  padding: 8px;
+    margin-left: 5px;
+    font-family: 'Berkshire Swash', serif;
+  font-size: 45px;
+  text-shadow: 4px 4px 4px #aaa;
+  
+  font-size: 2.8em;
+  color: #2c3e50;
+}
+/*.alig {
+    display: inline-block;
+}
+.align1 {
+    margin-left: 900px;
+}
+.align2 {
+    margin-left: 18px;
+}
+.align3 {
+    margin-left: 18px;
+}*/
+
+/* Hero Unit ----------------------*/
+.hero-unit {
+  height: 640px;
+  background: url(http://www.zenxeon.com/wp-content/uploads/2016/01/Website-Design-Background.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.hero-unit h1,
+.hero-unit h2,
+.hero-unit h3,
+.hero-unit h4,
+.hero-unit h5,
+.hero-unit h6 {
+  margin-top: -0.5rem;
+  margin-bottom: 0;
+  color: white;
+}
+.hero-unit h1 {
+  font-weight: bold;
+}
+.hero-unit hgroup {
+  margin: 3rem 0;
+}
+.hero-unit .card-icon { /* front of card */
+  display: block;
+  margin: 0.5rem auto 0;
+  font-size: 2rem;
+  color: white;
+}
+.hero-unit .clients {
+  margin: 2rem auto;
+}
+.hero-unit .clients a {
+  color: white;
+}
+.clients .fa-stack-2x {
+  color: gray;
+}
+.clients:hover .fa-stack-2x {
+  color: #333333;
+}
+
+/* Card design - front */
+.button.large {
+  margin: 0;
+  padding: 3.25rem;
+}
+.button.large a {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+
+/* Card design - back */
+.panel i {
+  font-size: 2rem;
+  display: block;
+  float: left;
+  width: 20%;
+  opacity: 0.5;
+}
+
+
+/*MODAL********/
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+$lato: 'Lato', sans-serif;
+
+//color
+$yellow: #FFD300; 
+$white: #f2f1f1;
+$black: #000000;
+$black-light: #5E5E5E;
+
+//font weights:
+$thin: 300;
+$normal: 400;
+$bold: 900;
+
+
+/*==================================== 
+  Some styles to spruce up the demo
+=====================================*/ 
+
+
+
+
+
+
+/*==================================== 
+  Our Modal Window styles
+=====================================*/
+
+.modal > label {
+  background: inherit;
+  border: 1px solid white;
+  border-radius: .2em;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.75em 2em;
+  text-shadow: 1px 1px 1px #fff;
+  transition: all 0.55s;
+  
+}
+.modal2 > label{
+    color: white;
+    align-items: center;
+    margin-left: 5.5rem;
+    margin-top: -5rem;
+  
+  background: inherit;
+  border: 0.5px solid white;
+  border-radius: .05em;
+  cursor: pointer;
+  display: inline-block;
+  
+  padding: 0.5em 1.9em;
+  text-shadow: 1px 1px 1px #fff;
+  transition: all 0.55s;
+   
+    }
+.modal > label:hover {
+  transform: scale(0.97);
+}
+
+ 
+.modal__overlay {
+     background-color: dimgray;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  top: 0;
+  z-index: 600;
+}
+.modal__wrap {
+  padding: 1em 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+@media (min-width: 50em) {
+  .modal__wrap {
+    padding: 1.75em;
+  }
+}
+@media (min-height: 37.5em) {
+  .modal__wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+.modal__wrap label {
+  background: white;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  width: 1.5em;
+}
+.modal__wrap h2 {
+  color: whitesmoke;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.modal__wrap p {
+  color: whitesmoke;
+  text-align: justify;
+}
+.modal input:focus ~ label {
+  transform: scale(0.97);
+}
+
+input {
+  position: absolute;
+  top: -1000px;
+}
+
+.modal__overlay {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100;
+}
+
+input:checked ~ .modal__overlay {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+}
+
+
+.panel a, 
+.panel p, 
+.panel small {
+  width: 80%;
+  float: right;
+}
+.panel a {
+  margin-bottom: 0.5rem;
+}
+.panel a:hover {
+  text-decoration: underline;
+}
+.panel small {
+  margin-top: -0.5rem;
+  font-style: italic;
+}
+
+/* Buttons Card Flipper 
+ * Source: https://cssdeck.com/labs/rxcleo5w
+ */
+.flip-cards {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.flip-cards li {
+  float: left;
+  width: 33.3%;
+  height: 180px;
+  position: relative;
+  padding: 0;
+}
+
+.flip-cards li:hover {
+  cursor: pointer;
+}
+
+.flip-cards li:hover .card-front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: perspective(1000) rotateY(180deg);
+  -moz-transform: perspective(1000) rotateY(180deg);
+  -ms-transform: perspective(1000) rotateY(180deg);
+  -o-transform: perspective(1000) rotateY(180deg);
+  transform: perspective(1000) rotateY(180deg);
+}
+
+.flip-cards li:hover .card-back {
+  z-index: 950;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: perspective(1000) rotateY(0deg);
+  -moz-transform: perspective(1000) rotateY(0deg);
+  -ms-transform: perspective(1000) rotateY(0deg);
+  -o-transform: perspective(1000) rotateY(0deg);
+  transform: perspective(1000) rotateY(0deg);
+}
+
+.flip-cards .card-front,
+.flip-cards .card-back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.flip-cards .card-front {
+  -webkit-transform: perspective(1000) rotateY(0);
+  -moz-transform: perspective(1000) rotateY(0);
+  -ms-transform: perspective(1000) rotateY(0);
+  -o-transform: perspective(1000) rotateY(0);
+  transform: perspective(1000) rotateY(0);
+  z-index: 900;
+}
+
+.flip-cards .card-back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  z-index: 800;
+}
+
+/* Button Card Colors */
+.flip-cards .panel {
+  border: none;
+}
+
+.flip-cards .panel i,
+.flip-cards .panel p,
+.flip-cards .panel a,
+.flip-cards .panel small {
+  color: white;
+}
+
+/* First button color */
+.flip-cards li:first-child > .button {
+  background-color: rgba(40, 57, 77, 0.8);
+}
+.flip-cards li:first-child > .panel {
+  background-color: rgba(40, 57, 77, 1);
+}
+
+/* Second button color */
+.flip-cards li:nth-child(2) > .button {
+  background-color: rgba(109, 193, 202, 0.8);
+}
+.flip-cards li:nth-child(2) > .panel {
+  background-color: rgba(109, 193, 202, 1);
+}
+
+/* Third button color */
+.flip-cards li:nth-child(3) > .button {
+  background-color: rgba(211, 81, 45, 0.8);
+}
+.flip-cards li:nth-child(3) > .panel {
+  background-color: rgba(211, 81, 45, 1);
+}
+
+/* Fourth button color */
+.flip-cards li:nth-child(4) > .button {
+  background-color: rgba(235, 167, 36, 0.8);
+}
+.flip-cards li:nth-child(4) > .panel {
+  background-color: rgba(235, 167, 36, 1);
+}
+
+/* Fifth button color */
+.flip-cards li:nth-child(5) > .button {
+  background-color: rgba(75, 135, 150, 0.8);
+}
+.flip-cards li:nth-child(5) > .panel {
+  background-color: rgba(75, 135, 150, 1);
+}
+
+/* Sixth (last) button color */
+.flip-cards li:last-child > .button {
+  background-color: rgba(100, 66, 87, 0.8);
+}
+.flip-cards li:last-child > .panel {
+  background-color: rgba(100, 66, 87, 1);
+  color: white;
+}
+
+/*
+ * RESPONSIVENESS -------------------------------------------------
+ */
+@media only screen and ( max-width: 40em ) {
+	.hero-unit {
+		height: 800px;
+	}
+	.flip-cards li {
+		width: 50%;
+		/*height: 160px;*/
+	}
+}
+@media only screen and ( max-width: 30em ) {
+	.hero-unit h1 {
+		font-size: 1.75rem;
+	}
+	.hero-unit h3 {
+		font-size: 1.125rem;
+	}
+}
+@media only screen and ( max-width: 25em ) {
+	.hero-unit {
+		height: 920px;
+	}
+	.hero-unit hgroup {
+		margin: 2rem 0;
+	}
+	.hero-unit h1 {
+		font-size: 1.35rem;
+		padding-bottom: 0.25rem;
+	}
+	.hero-unit h3 {
+		font-size: 0.85rem;
+	}
+	.hero-unit .card-icon {
+		font-size: 1.35rem;
+	}
+	.hero-unit .card-back .card-icon {
+		font-size: 2rem;
+		margin: 0;
+		padding: 5px 0 20px 5px;
+	}
+	.flip-cards li {
+		width: 100%;
+		font-size: 1.35rem;
+		height: 120px;
+	}
+	.flip-cards .panel p {
+		display: none;	
+	}
+	.flip-cards .panel small {
+		margin: 0;
+	}
+	.button.large {
+		padding: 2rem;
+	}
+	.button.large a {
+		font-size: 1.35rem;
+	}
+}
+
+
+/*navigation bar*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+    height: 60px;
+}
+
+.topnav a {
+    
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .a h1 {
+    float: left;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
